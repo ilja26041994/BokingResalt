@@ -21,5 +21,6 @@ class Room(models.Model):
     description = models.TextField(null=True, blank=True)
     is_deleted = models.BooleanField(default=False)
 
+
     def __str__(self):
         return f'{self.room_type.name} - {self.number}'
