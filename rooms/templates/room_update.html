@@ -1,0 +1,57 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 bg-white p-2" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)">
+            <h2 class="text-center">Изменение комнаты</h2>
+            {% if error_message %}
+                <div class="alert alert-danger" role="alert">
+                    {{ error_message }}
+                </div>
+            {% endif %}
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="room_type_id">Тип комнаты</label>
+                    <select class="form-control" id="room_type_id" name="room_type_id">
+                        {% for room_type in room_types %}
+                            {% if room_type.id == room_type_id %}
+                                <option value="{{ room_type.id }}" selected>{{ room_type.name }}</option>
+                            {% else %}
+                                <option value="{{ room_type.id }}">{{ room_type.name }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="number">Номер комнаты</label>
+                    <input value="{{ number }}" type="number" class="form-control" id="number" name="number">
+                </div>
+                <div class="form-group">
+                    <label for="beds">Кол-во спальных мест</label>
+                    <input value="{{ beds }}" type="number" step="1" class="form-control" id="beds" name="beds">
+                </div>
+                <div class="form-group">
+                    <label for="price">Цена</label>
+                    <input value="{{ price }}" type="number" step="1" class="form-control" id="price" name="price">
+                </div>
+                <div class="form-group">
+                    <label for="description">Описание</label>
+                    <textarea class="form-control" id="description" name="description">{{ description }}</textarea>
+                </div>
+                <div class="form-group">
+                    <input {% if is_available %} checked {% endif %} type="checkbox" id="is_available" name="is_available">
+                    <label for="is_available">Доступность</label>
+                </div>
+                <div class="form-group">
+                    <label for="image">Изображение</label>
+                    <input value="{{ image }}" type="file" class="form-control-file" id="image" name="image">
+                </div>
+                <button type="submit" class="btn btn-primary">Изменить</button>
+                <a href="{% url 'room_detail' room_id %}" class="btn btn-secondary">назад</a>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+{% endblock %}

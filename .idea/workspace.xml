@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="880bd6a0-b8ce-40e0-a948-b3c11e365349" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/BokingResalt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BokingResalt/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BokingResalt/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BokingResalt/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BokingResalt/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BokingResalt/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/templates/booking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feedback/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/members/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/room_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/room_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/room_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/room_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/templates/room_update.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rooms/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/booking/booking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/feedback/feedback_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/feedback/feedbak_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/layuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rooms/room_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rooms/room_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rooms/room_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rooms/room_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rooms/room_update.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="84010921-0459-4526-953a-994866e383b4" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2f8xRfPJ3eoSXmAxYvFSZ8fYlBR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.BokingResalt.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Илья/PycharmProjects/BokingResalt/templates/rooms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Илья\PycharmProjects\BokingResalt\templates\rooms" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BokingResalt" type="Python.DjangoServer" factoryName="Django server">
+      <module name="BokingResalt" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="BokingResalt.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="880bd6a0-b8ce-40e0-a948-b3c11e365349" name="Changes" comment="" />
+      <created>1713196499670</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713196499670</updated>
+      <workItem from="1713196541885" duration="4053000" />
+      <workItem from="1713697627406" duration="34000" />
+      <workItem from="1713800257890" duration="6129000" />
+      <workItem from="1716822775216" duration="314000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" style="position: relative; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Layout</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffffe0, #ccffcc);
+        }
+    </style>
+</head>
+<body style="padding-bottom: 60px;">
+<header>
+    <nav class="navbar navbar-expand-lg"
+         style="background-color: rgba(0, 0, 0, 0.1); box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);">
+        <img src="/media/default.jpg" width="30" height="30" alt="">
+        <a class="navbar-brand" href="#">Hotel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'room_list' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a href="{% url 'room_create' %}" class="nav-link text-success">Добавить комнату</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{% url 'feedback_list' %}" class="nav-link">Тикеты</a>
+                    </li>
+                {% endif %}
+                {% block header %}
+
+                {% endblock %}
+            </ul>
+            {% if not user.is_authenticated %}
+                <ul class="navbar-nav">
+                    <li class="nav-item active mr-2">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal"
+                                data-target="#loginModal">
+                            Вход
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                data-target="#regModal">
+                            Регистрация
+                        </button>
+                    </li>
+                </ul>
+            {% else %}
+                <ul class="navbar-nav">
+                    <li class="nav-item active mr-2">
+                        <a class="nav-link" href="#">{{ user.username }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Выход</a>
+                    </li>
+                </ul>
+            {% endif %}
+        </div>
+    </nav>
+</header>
+
+{% block modal_button %}
+
+{% endblock %}
+
+<main role="main" class="container" style="padding: 15px">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer class="footer mt-auto py-3"
+        style="position: absolute; bottom: 0; width: 100%; height: 60px; background-color: rgba(0, 0, 0, 0.1); box-shadow: 0 0 10px rgba(0, 0, 0, 0.6)">
+    <div class="container">
+        <span class="text-muted">© 2024 Hotel</span>
+    </div>
+</footer>
+<!-- Модальное окно для входа -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h4>Вход</h4>
+            </div>
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="username">Имя пользователя</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" step="1" class="form-control" id="password" name="password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Модальное окно для регистрации -->
+<div class="modal fade" id="regModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h4>Регистрация</h4>
+            </div>
+            <form method="post" action="{% url 'signup' %}">
+                {% csrf_token %}
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="username">Имя пользователя</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Адрес электронной почты</label>
+                        <input type="text" step="1" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_password">Повтор пароля</label>
+                        <input type="password" step="1" class="form-control" id="confirm_password"
+                               name="confirm_password">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Регистрация</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Модалка для feedback -->
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <h4>Обратная связь</h4>
+            </div>
+            <form method="post" action="{% url 'create_ticket' %}">
+                {% csrf_token %}
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="title">Тема</label>
+                        <input type="text" class="form-control" id="title" name="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="category_id">Категория</label>
+                        <select class="form-control" id="category_id" name="category_id">
+                            {% for category in tickets_category %}
+                                <option value="{{ category.id }}">{{ category.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Описание</label>
+                        <textarea class="form-control" id="description" rows="5" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block modal_button %}
+    {% if user.is_authenticated %}
+        <!-- Кнопки прикреплённые снизу-справа окна -->
+        <div style="position: fixed; bottom: 10px; right: 10px; z-index: 10">
+            <button type="button" style="border-radius: 50%; width: 45px; height: 45px;" class="btn btn-primary"
+                    data-toggle="modal" data-target="#feedbackModal">?
+            </button>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block header %}
+    {% if user.is_authenticated %}
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'getBasket' %}">
+                Заказы
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary text-white">
+                {{ count_rooms }}
+              </span>
+            </a>
+        </li>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-flex-start column-gap-3">
+        {% for room in rooms %}
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4 box-shadow" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.4)">
+                    <img src="{{ room.image.url }}" class="card-img-top" alt="room image" height="170">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ room.number }} - {{ room.room_type.name }}</h5>
+                        <p class="card-text">Кол-во спальных мест: {{ room.beds }}</p>
+                        <p class="card-text">Цена: {{ room.price }}</p>
+                        <p class="card-text">{{ room.room_type.description }}</p>
+                        <a href="{% url 'room_detail' room_id=room.id %}" class="btn btn-primary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

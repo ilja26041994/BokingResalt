@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	<h2 class="text-center">Подтверждение удаления</h2>
+    <p class="text-center">Вы действительно хотите удалить комнату {{ number }}?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Удалить</button>
+        <a href="{% url 'room_detail' room_id=room_id %}" class="btn btn-secondary">Отмена</a>
+    </form>
+{% endblock %}
