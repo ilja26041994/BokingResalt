@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="880bd6a0-b8ce-40e0-a948-b3c11e365349" name="Changes" comment="62%" />
+    <list default="true" id="880bd6a0-b8ce-40e0-a948-b3c11e365349" name="Changes" comment="62%">
+      <change afterPath="$PROJECT_DIR$/media/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/1672818190_pro-dachnikov-com-p-komnata-khostela-foto-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/1672818190_pro-dachnikov-com-p-komnata-khostela-foto-2_RnWgtwq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/2a833ab0adce9fb6a6490af3bd73c7a5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/XXL_height.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/XXL_height_O3hay93.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/XXXL.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/room_images/хостел-на-фото.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/rooms/1.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/rooms/XXL.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/rooms/XXL_height.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/rooms/XXXL.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/rooms/room_vip.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/feedback/feedback_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback/feedback_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/feedback/feedbak_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback/feedbak_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layuot.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,14 +41,20 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ilja26041994"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ilja26041994&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="84010921-0459-4526-953a-994866e383b4" />
   </component>
@@ -52,26 +77,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.BokingResalt.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Илья/PycharmProjects/BokingResalt/templates/rooms",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.BokingResalt.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Илья/PycharmProjects/BokingResalt/templates/rooms&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Илья\PycharmProjects\BokingResalt\templates\rooms" />
@@ -122,7 +147,10 @@
       <workItem from="1713196541885" duration="4053000" />
       <workItem from="1713697627406" duration="34000" />
       <workItem from="1713800257890" duration="6129000" />
-      <workItem from="1716822775216" duration="3476000" />
+      <workItem from="1716822775216" duration="4790000" />
+      <workItem from="1716913379396" duration="3488000" />
+      <workItem from="1717427435550" duration="1051000" />
+      <workItem from="1717515589003" duration="4635000" />
     </task>
     <task id="LOCAL-00001" summary="62%">
       <option name="closed" value="true" />
@@ -188,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716826835657</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="62%">
+      <option name="closed" value="true" />
+      <created>1716827351337</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716827351337</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

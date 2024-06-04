@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'layout.html' %}
 
-</body>
-</html>
+{% block content %}
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="row">
+                <div class="col-2">
+                    <a href="{% url 'feedback_list' %}"><</a>
+                </div>
+                <div class="col-10"><h2 class="text-center">Подробная информация</h2></div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div>
+                <div>Тема:</div>
+                <h4>{{ feedback.title }}</h4>
+                <br/>
+                <label for="desc">Описание:</label> <br/>
+                <textarea id="desc" rows="7" class="form-control" disabled>{{ feedback.description }}</textarea>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-3">
+            <div>
+                <p>Дата создания: {{ feedback.created_at }}</p>
+                <p>Создатель: {{ feedback.user.username }}</p>
+                <p>Статус: {{ feedback.status.name }}</p>
+                <p>Категория: {{ feedback.category.name }}</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

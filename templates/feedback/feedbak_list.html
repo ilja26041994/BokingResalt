@@ -1,10 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'layout.html' %}
 
-</body>
-</html>
+
+{% block content %}
+    <h1 class="text-center">Обратная связь</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Категория</th>
+            <th>Дата</th>
+            <th>Статус</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for ticket in feedbacks %}
+            <tr>
+                <td>{{ ticket.title }}</td>
+                <td>{{ ticket.category.name }}</td>
+                <td>{{ ticket.created_at }}</td>
+                <td>{{ ticket.status.name }}</td>
+            <td>
+                <a href="{% url 'feedback_detail' ticket.id %}" class="btn btn-outline-primary">Открыть</a>
+            </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
