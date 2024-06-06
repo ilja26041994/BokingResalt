@@ -5,23 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="880bd6a0-b8ce-40e0-a948-b3c11e365349" name="Changes" comment="62%">
-      <change afterPath="$PROJECT_DIR$/media/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/1672818190_pro-dachnikov-com-p-komnata-khostela-foto-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/1672818190_pro-dachnikov-com-p-komnata-khostela-foto-2_RnWgtwq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/2a833ab0adce9fb6a6490af3bd73c7a5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/XXL_height.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/XXL_height_O3hay93.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/XXXL.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/room_images/хостел-на-фото.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rooms/1.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rooms/XXL.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rooms/XXL_height.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rooms/XXXL.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rooms/room_vip.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedback/feedback_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback/feedback_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/feedback/feedbak_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/feedback/feedbak_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layuot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +134,8 @@
       <workItem from="1716822775216" duration="4790000" />
       <workItem from="1716913379396" duration="3488000" />
       <workItem from="1717427435550" duration="1051000" />
-      <workItem from="1717515589003" duration="4635000" />
+      <workItem from="1717515589003" duration="4677000" />
+      <workItem from="1717520509678" duration="446000" />
     </task>
     <task id="LOCAL-00001" summary="62%">
       <option name="closed" value="true" />
@@ -224,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716827351337</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="62%">
+      <option name="closed" value="true" />
+      <created>1717520450201</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1717520450201</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
